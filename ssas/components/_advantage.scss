@@ -1,0 +1,48 @@
+/* Преимущества advantage */
+.advantage {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage__lable {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-alt-color);
+  border-radius: 4px;
+}
+
+.advantage__item {
+  min-width: 270px;
+}
+
+.advantage__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* advantage-icon Иконки */
+.advantage__icon {
+  height: 70px;
+  width: 70px;
+}
+
+.advantage__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantage__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}

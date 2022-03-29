@@ -1,0 +1,20 @@
+/* Страница Портфолио */
+.filtr {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+
+.filtr__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.section .projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}

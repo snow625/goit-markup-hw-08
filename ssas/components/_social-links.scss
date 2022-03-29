@@ -1,0 +1,55 @@
+/* social-link */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
+}
+
+.social-links__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+/* ссылка с картинкой */
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  color: var(--icon-fill-color-primary);
+  border-radius: 50%;
+
+  /* css переход */
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-text-color);
+    color: var(--background-white-color);
+  }
+}
+
+.social-links__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Дополнительный класс new 
+для переопределения цветов иконок */
+.social-links__link--new {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--background-white-color);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-text-color);
+  }
+}
