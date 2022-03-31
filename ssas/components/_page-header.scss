@@ -1,6 +1,7 @@
 /* Нижняя граница у heder */
 .header {
   border-bottom: 1px solid var(--border-color);
+  
 }
 
 /* собирает весь header вместе */
@@ -9,7 +10,8 @@
   align-items: center;
 }
 .main-nav {
-  margin-left: 93px;
+  margin-left: 83px;
+  
 }
 
 /* site-nav */
@@ -19,6 +21,8 @@
   margin-bottom: 0;
   margin-left: 0;
   padding: 0;
+  
+  
 }
 
 .site-nav__link {
@@ -73,41 +77,82 @@
 /* contacts */
 .contacts {
   display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  @include mq(mobile-only) {
+    display: none;
+  }
+  
+    
+  
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
+
+
+
 
 /* иконки для heared */
-
 .contacts__icon {
+  
+  width: 8px;
+  height: 14px;
+  margin-right: 8px;
+  fill: currentColor;
+
+  @media screen and (min-width:1200px){
+  margin-right: 10px;
   width: 10px;
   height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
+}
+
+  
 }
 
 .contacts__icon--mail {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width:1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .contacts__item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  
+  @media screen and  (max-width:1200px) {
+    
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    
+  }
+  @media screen and (min-width:1200px) {
+    justify-content: center;
+  }
+  
+
+  
 }
+
 
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+
+ 
 
   color: var(--primery-text-color);
   font-weight: 500;
@@ -124,4 +169,9 @@
   &:hover {
     color: var(--accent-text-color);
   }
+  @media screen and (min-width:1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
 }
