@@ -1,0 +1,91 @@
+/* Преимущества advantage */
+.advantage {
+  
+  margin: 0;
+  padding: 0;
+  @include mq(tablet-only){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include mq(desktop) {
+    display: flex;
+  }
+}
+
+.advantage__lable {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-alt-color);
+  border-radius: 4px;
+
+
+}
+.advantage__item:not(:last-child) {
+  
+  // margin-right: 30px;
+}
+
+.advantage__item {
+  
+
+  @include mq(mobile-only){
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+  }
+  
+  @include mq(tablet){
+    width:354px;
+  }
+  @include mq(tablet-only) {
+    &:nth-child(2n+1){
+      margin-right: 30px;
+    }
+    &:nth-child(-n+2) {
+      margin-bottom: 30px;
+    }
+  
+  }
+  @include mq(desktop) {
+        width: 270px;
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+
+}
+
+
+
+/* advantage-icon Иконки */
+.advantage__icon {
+  height: 70px;
+  width: 70px;
+}
+
+.advantage__title {
+  
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @include mq(mobile-only){
+    text-align: center;
+  }
+}
+
+.advantage__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}

@@ -24,8 +24,40 @@
         <a href="./index.html" class="logo"
           >Web<span class="logo__text logo__text--dark">Studio</span></a
         >
-        <button type="button">Открыть меню</button>
-        <!-- <nav class="main-nav">
+        <!-- Мобильное меню -->
+        <button class="menu-button" aria-expanded="false" data-menu-button type="button">
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="menu-button__open" href="./images/icons.svg#icon-menu"></use>
+            <use class="menu-button__close" href="./images/icons.svg#mobile-close"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
+          <ul class="list mobile-nav">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
+          </ul>
+          <ul class="list mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts__link link">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__phone link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-social"><a class="mobile-contacts__social" href="">Instagram</a></li>
+            <li class="mobile-social"><a class="mobile-contacts__social" href="">Twitter</a></li>
+            <li class="mobile-social"><a class="mobile-contacts__social" href="">Facebook</a></li>
+            <li class="mobile-social"><a class="mobile-contacts__social" href="">LinkedIn</a></li>
+          </ul>
+        </div>
+        <!-- Навигация  -->
+        <nav class="main-nav">
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
@@ -53,22 +85,22 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul> -->
+        </ul>
       </div>
     </header>
 
     <main>
       <!--Герой hero-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open type="button" class="button hero__button">Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!--Преимущества-->
 
-      <!-- <section class="section nopading">
+      <section class="section nopading">
         <div class="container">
           <h2 class="visually-hidden">Почему именно мы?</h2>
           <ul class="advantage list">
@@ -118,11 +150,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Чем мы занимаемся-->
 
-      <!-- <section class="section">
+      <section class="section section-example">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="examples list">
@@ -146,11 +178,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Наша команда-->
 
-      <!-- <section class="section second-bg-color">
+      <section class="section second-bg-color">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
@@ -304,10 +336,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наши клиенты -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list clients">
@@ -355,10 +387,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Модальное окно -->
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <form class="modal-form" autocomplete="off">
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
@@ -420,11 +452,11 @@
             </svg>
           </button>
         </div>
-      </div> -->
+      </div>
     </main>
 
     <!--Подвал-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div>
           <a href="./index.html" class="logo"
@@ -473,7 +505,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-links">
+        <div class="footer-links footer-subscribe">
           <h2 class="title">Подпишитесь на рассылку</h2>
           <form class="form-subscibe">
             <input
@@ -492,9 +524,10 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!--Скрипт Модалки-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

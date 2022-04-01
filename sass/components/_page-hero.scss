@@ -1,8 +1,8 @@
 /* hero */
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0;
+  
   max-width: 1600px;
 
   margin-left: auto;
@@ -14,19 +14,40 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include mq(desktop){
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
-  width: 696px;
+  
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
 
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-white-color);
+
+  @include mq(mobile) {
+    width: 360px;
+  }
+
+  @include mq(desktop){
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+  }
+  
+ 
+  
+  
 }

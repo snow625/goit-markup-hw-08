@@ -17,6 +17,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height:auto;
 }
 
 /* Скрывает логические заголовки */
@@ -35,14 +37,19 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(desktop){
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* убирает нижний падинг */
-.section.nopading {
-  padding-bottom: 0;
-}
+// .section.nopading {
+//   padding-bottom: 0;
+// }
 
 .container {
   padding: 0 15px;
@@ -61,16 +68,27 @@ img {
     width: 1200px;
   }
 }
+
+
 /* Заголовки h2 */
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  
+  
 
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    
+  }
+
 }
 /* фон не основной */
 

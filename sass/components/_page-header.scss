@@ -1,7 +1,10 @@
 /* Нижняя граница у heder */
 .header {
   border-bottom: 1px solid var(--border-color);
+  position: relative;
   
+  
+ 
 }
 
 /* собирает весь header вместе */
@@ -10,6 +13,9 @@
   align-items: center;
 }
 .main-nav {
+  @include mq(mobile-only) {
+    display: none;
+  }
   margin-left: 83px;
   
 }
@@ -21,6 +27,9 @@
   margin-bottom: 0;
   margin-left: 0;
   padding: 0;
+  @include mq(mobile-only) {
+    display: none;
+  }
   
   
 }
@@ -85,15 +94,13 @@
   @include mq(mobile-only) {
     display: none;
   }
+  @include mq(desktop) {
+    flex-direction: row;
+  }
   
     
   
-  @media screen and (min-width:1200px) {
-    flex-direction: row;
-    &__item:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
+  
 }
 
 
@@ -131,19 +138,21 @@
   display: flex;
   align-items: center;
   
-  @media screen and  (max-width:1200px) {
-    
+  @include mq(tablet-only) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
-    
   }
-  @media screen and (min-width:1200px) {
+    
+  @include mq(desktop) {
     justify-content: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
   }
   
 
-  
 }
 
 

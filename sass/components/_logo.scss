@@ -5,15 +5,26 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-
   
   color: var(--accent-text-color);
 
 
+  @include mq(mobile-only){
+    padding: 16px 0;
+  }
+
+
+  @include mq(desktop){
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
 }
+
 .logo__text--dark {
   color: var(--title-text-color);
 }
+
 .logo__text--white {
   color: var(--background-white-color);
 }

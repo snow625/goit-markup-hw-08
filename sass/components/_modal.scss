@@ -37,13 +37,19 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  
+  // min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   background-color: var(--background-white-color);
+
+  @include mq(desktop){
+    width: 528px;
+    
+  }
 }
 .modal-title {
   margin-bottom: 12px;

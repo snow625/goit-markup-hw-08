@@ -1,4 +1,13 @@
 /*  <!--Чем мы занимаемся--> */
+.section-example{
+  padding-top: 0;
+  display: none;
+  @include mq(desktop){
+    display: block;
+  }
+}
+
+
 .examples {
   display: flex;
   flex-wrap: wrap;

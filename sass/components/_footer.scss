@@ -53,10 +53,40 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+
+  text-align: center;
+  @include mq(tablet-only){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    @include mq(desktop) {
+      display: flex;
+      align-items: baseline;
+      text-align: left;
+      justify-content: center;
+    }
+  
 }
 
 .footer-links {
-  margin-left: 70px;
+  @include mq (mobile-only) {
+    margin-top: 60px;
+  }
+  @include mq(desktop) {
+    margin-left: 70px;
+  }
+  
+  
+ 
+  
+  
+}
+.footer-subscribe{
+  @include mq (tablet-only) {
+    margin-top: 60px;
+  }
+  @include mq(desktop) {
+    margin-left: 93px;
+  }
 }
