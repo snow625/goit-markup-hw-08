@@ -22,6 +22,8 @@
   width: 18px;
   height: 18px;
   fill: #000000;
+
+
 }
 
 .form-label-text {
@@ -75,8 +77,21 @@
 }
 .checkbox label {
   cursor: pointer;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 11px;
+  line-height: 1.2;
+
+  @include mq(mobile){
+    
+    line-height: 1.16;
+  }
+
+  @include mq(desktop){
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+ 
+
 }
 .checkbox a {
   margin-left: 5px;

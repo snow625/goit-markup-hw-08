@@ -7,6 +7,8 @@
   height: 100%;
 
   opacity: 1;
+  z-index: 2;
+  overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -37,7 +39,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
 
-  width: 450px;
+  width: 94%;
   
   // min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -46,6 +48,10 @@
 
   background-color: var(--background-white-color);
 
+  @include mq(mobile){
+    width: 450px;
+
+  }
   @include mq(desktop){
     width: 528px;
     
@@ -57,9 +63,20 @@
 
   font-weight: 700;
   font-size: 20px;
+  line-height: 1.5;
   color: var(--title-text-color);
+  
+  @include mq(desktop){
+    line-height: 1.15;
+  }
 }
 
 .modal-form {
-  padding: 40px;
+  padding: 17px;
+
+  @include mq(mobile){
+    padding: 40px;
+  }
+
+  
 }

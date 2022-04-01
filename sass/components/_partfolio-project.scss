@@ -53,6 +53,12 @@
   overflow: hidden;
 }
 .projects .item{
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+  
 
   @include mq(mobile-only){
     &:not(:last-child){
@@ -84,9 +90,12 @@
 
 
 .projects-link {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 100%;
   // width: 354px;
-  display: block;
+  
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -111,6 +120,7 @@
 }
 
 .projects-text-name {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid var(--border-color-second);
   border-left: 1px solid var(--border-color-second);
