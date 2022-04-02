@@ -150,9 +150,14 @@ img {
   display: none;
 }
 
+.menu-button.is-open {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+}
+
 .menu-container {
   display: none;
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -168,6 +173,7 @@ img {
 }
 
 .menu-container.is-open {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
