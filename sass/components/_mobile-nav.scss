@@ -37,7 +37,11 @@
 .menu-button.is-open{
     position: fixed;
     top: 10px;
-    right: 15px;
+    right: 5%;
+    @media screen and (min-width:539px) {
+        right: 15%;
+        
+    }
     
 }
 
