@@ -22,7 +22,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-white-color);
-
+      @media screen and(max-width:767px) {
+        &:not(:last-child){
+          margin-bottom: 30px;
+        }
+      }
       @include mq(tablet-only){
         width: 354px;
         &:nth-child(2n+1){

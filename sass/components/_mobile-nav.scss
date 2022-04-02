@@ -25,12 +25,15 @@
 }
 
 .menu-button.is-open .menu-button__close{
+    
     display: block;
 }
 
 .menu-button.is-open .menu-button__open{
     display: none;
 }
+
+
 
 .menu-container{
     display: none;
@@ -55,6 +58,7 @@
 }
 
 .menu-container.is-open{
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;

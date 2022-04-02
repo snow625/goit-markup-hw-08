@@ -25,37 +25,40 @@
           >Web<span class="logo__text logo__text--dark">Studio</span></a
         >
         <!-- Мобильное меню -->
-        <button class="menu-button" aria-expanded="false" data-menu-button type="button">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="menu-button__open" href="./images/icons.svg#icon-menu"></use>
-            <use class="menu-button__close" href="./images/icons.svg#mobile-close"></use>
-          </svg>
-        </button>
-        <div class="menu-container" data-menu>
-          <ul class="list mobile-nav">
-            <li class="mobile-nav__item">
-              <a href="./index.html" class="mobile-nav__link">Студия</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
-            </li>
-            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
-          </ul>
-          <ul class="list mobile-contacts">
-            <li class="mobile-contacts__item">
-              <a href="tel:+380961111111" class="mobile-contacts__link link">+38 096 111 11 11</a>
-            </li>
-            <li class="mobile-contacts__item">
-              <a href="mailto:info@devstudio.com" class="mobile-contacts__phone link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="mobile-social"><a class="mobile-contacts__social" href="">Instagram</a></li>
-            <li class="mobile-social"><a class="mobile-contacts__social" href="">Twitter</a></li>
-            <li class="mobile-social"><a class="mobile-contacts__social" href="">Facebook</a></li>
-            <li class="mobile-social"><a class="mobile-contacts__social" href="">LinkedIn</a></li>
-          </ul>
-        </div>
+        
+          <button class="menu-button" aria-expanded="false" data-menu-button type="button">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu-button__open" href="./images/icons.svg#icon-menu"></use>
+              <use class="menu-button__close" href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+          <div class="menu-container" data-menu>
+            <ul class="list mobile-nav">
+              <li class="mobile-nav__item">
+                <a href="./index.html" class="mobile-nav__link">Студия</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+              </li>
+              <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
+            </ul>
+            <ul class="list mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link link">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__phone link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-social"><a class="mobile-contacts__social" href="">Instagram</a></li>
+              <li class="mobile-social"><a class="mobile-contacts__social" href="">Twitter</a></li>
+              <li class="mobile-social"><a class="mobile-contacts__social" href="">Facebook</a></li>
+              <li class="mobile-social"><a class="mobile-contacts__social" href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        
+        
         <!-- Навигация  -->
         <nav class="main-nav">
           <ul class="site-nav list">
@@ -160,19 +163,63 @@
           <ul class="examples list">
             <li class="examples__item">
               <div class="examples__icon">
-                <img src="./images/1.jpg" alt="Пишем код для Windosw" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/we-do/img-1.jpg 1x,
+                    ./images/we-do/img-1@2x.jpg 2x"
+                    type="image/jpeg"
+                  
+                  />
+                  <img
+                    src="./images/we-do/img-1.jpg"
+                    alt="Пишем код для Windows"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="examples__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="examples__item">
               <div class="examples__icon">
-                <img src="./images/2.jpg" alt="Пишем код для Android" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/we-do/img-2.jpg 1x,
+                            ./images/we-do/img-2@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/we-do/img-2.jpg"
+                    alt="Пишем код для Android"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                    
+                  />
+                </picture>
+
                 <p class="examples__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="examples__item">
               <div class="examples__icon">
-                <img src="./images/3.jpg" alt="Пишем код для MacOS" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/we-do/img-3.jpg 1x,
+                    ./images/we-do/img-3@2x.jpg 2x"
+                    type="image/jpeg"
+                  
+                  />
+                  <img
+                    src="./images/we-do/img-3.jpg"
+                    alt="Пишем код для MacOS"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="examples__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -187,7 +234,36 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img src="./images/4.jpg" alt="Фото Игоря Демьяненко" width="270" />
+
+              <picture>
+                <source
+                srcset="./images/team/desktop/img-1.jpg 1x,
+                        ./images/team/desktop/img-1@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./images/team/tablet/img-1.jpg 1x,
+                        ./images/team/tablet/img-1@2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+                <source
+                  srcset="./images/team/mobile/img-1.jpg 1x,
+                  ./images/team/mobile/img-1@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                
+                />
+                <img
+                  src="./images/team/mobile/img-1.jpg"
+                  alt="Фото Игоря Демьяненко"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+              
               <div class="team__text">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -224,7 +300,35 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/5.jpg" alt="Фото Ольги Репиной" width="270" />
+              <picture>
+                <source
+                srcset="./images/team/desktop/img-2.jpg 1x,
+                        ./images/team/desktop/img-2@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./images/team/tablet/img-2.jpg 1x,
+                        ./images/team/tablet/img-2@2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+                <source
+                  srcset="./images/team/mobile/img-2.jpg 1x,
+                          ./images/team/mobile/img-2@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                
+                />
+                <img
+                  src="./images/team/mobile/img-2.jpg"
+                  alt="Фото Ольги Репиной"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team__text">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -261,7 +365,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/6.jpg" alt="Фото Николая Тарасова" width="270" />
+              <picture>
+                <source
+                srcset="./images/team/desktop/img-3.jpg 1x,
+                        ./images/team/desktop/img-3@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./images/team/tablet/img-3.jpg 1x,
+                        ./images/team/tablet/img-3@2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+                <source
+                  srcset="./images/team/mobile/img-3.jpg 1x,
+                  ./images/team/mobile/img-3@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                
+                />
+                <img
+                  src="./images/team/mobile/img-3.jpg"
+                  alt="Фото Николая Тарасова"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -298,7 +429,35 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/7.jpg" alt="Фото Михаила Ермакова" width="270" />
+              <picture>
+                <source
+                srcset="./images/team/desktop/img-4.jpg 1x,
+                        ./images/team/desktop/img-4@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="./images/team/tablet/img-4.jpg 1x,
+                        ./images/team/tablet/img-4@2x.jpg 2x"
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+                <source
+                  srcset="./images/team/mobile/img-4.jpg 1x,
+                  ./images/team/mobile/img-4@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                
+                />
+                <img
+                  src="./images/team/mobile/img-4.jpg"
+                  alt="Фото Михаила Ермакова"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+              
               <div class="team__text">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>

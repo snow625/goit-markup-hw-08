@@ -75,7 +75,8 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-.checkbox label {
+
+.checkbox-label {
   cursor: pointer;
   font-size: 11px;
   line-height: 1.2;
@@ -124,7 +125,15 @@
 
 .checkbox-label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+
+  
+  @media screen and(max-width:290px) {
+    flex-direction: column-reverse;
+  }
+
 }
 
 .checkbox-input:checked + .checkbox-label .checkbox-icon {

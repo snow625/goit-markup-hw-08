@@ -6,7 +6,11 @@
   transform: translate(-50%, 100%);
 
   margin: 0;
-  width: 325px;
+  
+  // width: calc(100% - 24px);
+  width: 100%;
+  padding: 77px 24px;
+  
   font-size: 18px;
   line-height: 1.56;
 
@@ -17,6 +21,37 @@
   transition-delay: 0ms;
 
   color: var(--background-white-color);
+
+ 
+
+  @media screen and(max-width:375px) {
+    padding: 5px 10px;
+    font-size: 15px;
+    
+  }
+  @media screen and(max-width:280px) {
+    padding: 5px 10px;
+    font-size: 12px;
+    
+  }
+  @media screen and(max-width:236px) {
+    padding: 5px 10px;
+    font-size: 10px;
+    
+  }
+
+ 
+
+
+  @include mq(tablet-only){
+    padding: 49px 24px 77px 24px;
+  }
+
+  @include mq(desktop){
+    padding: 63px 24px;
+  }
+
+
 }
 
 /* хофер для текста при ховере на картинку
@@ -49,16 +84,16 @@
 }
 
 .overlay {
+  
   position: relative;
   overflow: hidden;
 }
+
+
+
 .projects .item{
   display: flex;
   flex-direction: column;
-  
-  
-  
-  
 
   @include mq(mobile-only){
     &:not(:last-child){
@@ -94,7 +129,7 @@
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  // width: 354px;
+  
   
 
   transition-property: box-shadow;
