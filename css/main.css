@@ -211,6 +211,10 @@ img {
   color: var(--accent-text-color);
 }
 
+.mobile-nav__link--curent {
+  color: var(--accent-text-color);
+}
+
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -557,6 +561,12 @@ img {
 
 .close:hover {
   color: var(--accent-text-color);
+}
+
+@media screen and (max-width: 320px) {
+  .close {
+    top: 23px;
+  }
 }
 
 .modal-close-icon {
